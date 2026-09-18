@@ -1,24 +1,4 @@
-/*
-  MainActivity.kt - Minimal "Read Aloud" Companion App
-  ------------------------------------------------------
-  1. Fetches a JPEG photo from the ESP32-CAM's /capture endpoint over WiFi
-  2. Runs on-device text recognition (Google ML Kit) on the photo
-  3. Speaks the recognized text using Android's Text-to-Speech engine
-     (audio automatically plays over a connected Bluetooth headset/earbuds
-     once they're paired and connected as the phone's active audio route
-     - no extra Bluetooth code needed, Android handles that routing)
 
-  Required Gradle dependencies (add to app/build.gradle):
-    implementation 'com.google.mlkit:text-recognition:16.0.0'
-    implementation 'androidx.core:core-ktx:1.12.0'
-
-  Required permissions (add to AndroidManifest.xml):
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-
-  Layout (activity_main.xml) needs just one button:
-    <Button android:id="@+id/captureButton" android:text="Capture & Read" ... />
-*/
 
 package com.example.readaloud
 
